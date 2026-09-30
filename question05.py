@@ -1,9 +1,9 @@
-l=[]
-sum=0
-for i in range(10):
-    item=int(input("enter element"))
-    l.append(item)
-    sum=sum+l[i]
-print("sum is :" , sum )
-avg=(sum)/10
-print("avg is :",avg)    
+def factorial(n):
+    fact = 1 
+    for i in range(1,n+1):
+        fact = fact*i
+    return fact
+
+3n = int(input("enter a number:"))
+result = factorial(n)
+print("factorial is :" , result)    

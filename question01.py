@@ -1,10 +1,8 @@
-#input list and remove dublications
-l=[]
-k=[]
-n=int(input("enter number of elements"))
-for i in range(n):
-    item=int(input("enter elements:"))
-    l.append(item)
-unique_list=set(l)
-for item in unique_list:
-    print(item)    
+def remove_last(lst):
+    lst.pop()
+
+my_list=[10,20,30,40,50]
+print("before function call:",my_list)
+remove_last(my_list)
+
+print("after function call:",my_list)

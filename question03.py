@@ -1,8 +1,11 @@
-l=[]
-for i in range(5):
-    item=input("enter element:")
-    l.append(item)
-print("second element is :" , l[1]) #display name at index 1 i.e.,2nd value 
-print("fourth element is :" , l[3]) #display name at index 3 i.e.,4nd value 
-l[4]="mango"#update last index name to mango
-print(l)#display the updated list    
+def add_entry(id):
+    id["city"] ="delhi"
+def reassign_dict(id):
+     id = {"name": "nishi" , "age": 19}
+     print("inside" , id )
+my_dict={"name": "nishi"}
+print("before:",my_dict)
+add_entry(my_dict)
+print("after add_entry:" , my_dict)
+reassign_dict(my_dict)
+print("after reassign_dict :" , my_dict)
